@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f2eb">
+  <meta name="description" content="Crea infoboxes de batallas para tus historias alternativas con WikiMockup.">
+  <title>WikiMockup</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="WikiMockup">
+      <img src="favicon.svg" alt="" width="42" height="42">
+      <span>WikiMockup</span>
+    </a>
+    <label class="language-picker">
+      <span id="language-label">Idioma</span>
+      <select id="language-select" aria-labelledby="language-label">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+        <option value="ru">Русский</option>
+        <option value="de">Deutsch</option>
+        <option value="it">Italiano</option>
+        <option value="fr">Français</option>
+        <option value="pt">Português</option>
+      </select>
+    </label>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">WIKIMOCKUP</p>
+      <h1 id="page-title">Un campo de batalla para tus historias</h1>
+      <p id="description"></p>
+    </section>
+
+    <section class="instructions" aria-labelledby="instructions-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" id="guide-eyebrow">GUÍA RÁPIDA</p>
+          <h2 id="instructions-title"></h2>
+        </div>
+        <span class="guide-icon" aria-hidden="true">✦</span>
+      </div>
+      <ol class="guide-list" id="guide-list"></ol>
+    </section>
+
+    <div class="workspace">
+      <section class="editor-panel" aria-labelledby="editor-title">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow" id="editor-eyebrow">EDICIÓN</p>
+            <h2 id="editor-title"></h2>
+          </div>
+          <button class="button button-subtle" id="reset-button" type="button"></button>
+        </div>
+        <form id="mockup-form">
+          <div id="editor-fields"></div>
+          <section class="custom-editor" aria-labelledby="custom-editor-title">
+            <div class="custom-heading">
+              <div>
+                <h3 id="custom-editor-title"></h3>
+                <p id="custom-editor-help"></p>
+              </div>
+              <button class="button button-small" id="add-row-button" type="button"></button>
+            </div>
+            <div id="custom-rows"></div>
+          </section>
+          <div class="form-actions">
+            <button class="button button-primary" id="apply-button" type="button"></button>
+            <button class="button button-secondary" id="copy-button" type="button"></button>
+            <button class="button button-secondary" id="download-button" type="button"></button>
+            <button class="button button-secondary" id="highlight-button" type="button"></button>
+          </div>
+          <p class="field-hint" id="highlight-help"></p>
+          <p class="copy-status" id="copy-status" aria-live="polite" role="status"></p>
+        </form>
+      </section>
+
+      <section class="preview-panel" aria-labelledby="preview-title">
+        <div class="panel-heading preview-heading">
+          <div>
+            <p class="eyebrow" id="preview-eyebrow">VISTA PREVIA</p>
+            <h2 id="preview-title"></h2>
+          </div>
+          <span class="live-badge"><span></span><span id="live-label"></span></span>
+        </div>
+        <div class="preview-stage">
+          <div id="preview-output" class="preview-content">
+            <div id="preview" class="wiki-box"></div>
+          </div>
+        </div>
+        <p class="preview-note" id="preview-note"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <span id="footer-copy"></span>
+    <span id="footer-note"></span>
+  </footer>
+</body>
+</html>
