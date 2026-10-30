@@ -35,7 +35,7 @@ const translations = {
     download: "Descargar imagen HD",
     downloadSuccess: "Infobox descargada como PNG en alta resolución.",
     downloadError: "No se pudo crear el PNG. Si usas imágenes externas, prueba con un archivo local o una URL que permita acceso CORS.",
-    footer: "© {year} Ivamori. Todos los derechos reservados.",
+    footer: "© {year} Ivanmori. Todos los derechos reservados.",
     nonprofit: "Proyecto sin fines de lucro; no se busca ganar dinero.",
     sections: {
       identity: "Identificación",
@@ -146,7 +146,7 @@ const translations = {
     download: "Download HD image",
     downloadSuccess: "Infobox downloaded as a high-resolution PNG.",
     downloadError: "Could not create the PNG. For external images, try a local file or a URL that allows CORS access.",
-    footer: "© {year} Ivamori. All rights reserved.",
+    footer: "© {year} Ivanmori. All rights reserved.",
     nonprofit: "Non-profit project; no money is being made.",
     sections: { identity: "Identification", image: "Images and sizing", details: "Details", sides: "Sides and participants", people: "Commanders and leaders", forces: "Strength and losses", customize: "Customize sections" },
     fields: {
@@ -193,7 +193,7 @@ const translations = {
     download: "Скачать HD-изображение",
     downloadSuccess: "Инфобокс скачан в PNG высокого разрешения.",
     downloadError: "Не удалось создать PNG. Для внешних изображений попробуйте локальный файл или URL с поддержкой CORS.",
-    footer: "© {year} Ivamori. Все права защищены.",
+    footer: "© {year} Ivanmori. Все права защищены.",
     nonprofit: "Некоммерческий проект; цель — не получение прибыли.",
     sections: { identity: "Основные сведения", image: "Изображения и размеры", details: "Подробности", sides: "Стороны и участники", people: "Командиры и лидеры", forces: "Силы и потери", customize: "Настройка разделов" },
     fields: {
@@ -240,7 +240,7 @@ const translations = {
     download: "HD-Bild herunterladen",
     downloadSuccess: "Infobox als hochauflösendes PNG heruntergeladen.",
     downloadError: "PNG konnte nicht erstellt werden. Verwende für externe Bilder eine lokale Datei oder eine URL mit CORS-Zugriff.",
-    footer: "© {year} Ivamori. Alle Rechte vorbehalten.",
+    footer: "© {year} Ivanmori. Alle Rechte vorbehalten.",
     nonprofit: "Gemeinnütziges Projekt; es wird kein Gewinn angestrebt.",
     sections: { identity: "Angaben", image: "Bilder und Größen", details: "Einzelheiten", sides: "Parteien und Beteiligte", people: "Befehlshaber und Anführer", forces: "Stärke und Verluste", customize: "Abschnitte anpassen" },
     fields: {
@@ -287,7 +287,7 @@ const translations = {
     download: "Scarica immagine HD",
     downloadSuccess: "Infobox scaricata in PNG ad alta risoluzione.",
     downloadError: "Impossibile creare il PNG. Per le immagini esterne, prova un file locale o un URL che consenta l'accesso CORS.",
-    footer: "© {year} Ivamori. Tutti i diritti riservati.",
+    footer: "© {year} Ivanmori. Tutti i diritti riservati.",
     nonprofit: "Progetto senza scopo di lucro; non si cerca di guadagnare.",
     sections: { identity: "Identificazione", image: "Immagini e dimensioni", details: "Dettagli", sides: "Schieramenti e partecipanti", people: "Comandanti e capi", forces: "Forze e perdite", customize: "Personalizza le sezioni" },
     fields: {
@@ -334,7 +334,7 @@ const translations = {
     download: "Télécharger l'image HD",
     downloadSuccess: "Infobox téléchargée en PNG haute résolution.",
     downloadError: "Impossible de créer le PNG. Pour les images externes, essayez un fichier local ou une URL autorisant l'accès CORS.",
-    footer: "© {year} Ivamori. Tous droits réservés.",
+    footer: "© {year} Ivanmori. Tous droits réservés.",
     nonprofit: "Projet à but non lucratif ; aucun gain financier n'est recherché.",
     sections: { identity: "Identification", image: "Images et dimensions", details: "Détails", sides: "Belligérants et participants", people: "Commandants et chefs", forces: "Effectifs et pertes", customize: "Personnaliser les sections" },
     fields: {
@@ -381,7 +381,7 @@ const translations = {
     download: "Baixar imagem HD",
     downloadSuccess: "Infobox baixada em PNG de alta resolução.",
     downloadError: "Não foi possível criar o PNG. Para imagens externas, tente um arquivo local ou um URL que permita acesso CORS.",
-    footer: "© {year} Ivamori. Todos os direitos reservados.",
+    footer: "© {year} Ivanmori. Todos os direitos reservados.",
     nonprofit: "Projeto sem fins lucrativos; não há intenção de ganhar dinheiro.",
     sections: { identity: "Identificação", image: "Imagens e dimensões", details: "Detalhes", sides: "Lados e participantes", people: "Comandantes e líderes", forces: "Forças e baixas", customize: "Personalizar seções" },
     fields: {
@@ -403,7 +403,7 @@ const fieldSections = {
   forces: ["strength", "strengthOne", "strengthTwo", "losses", "lossesOne", "lossesTwo"]
 };
 const textFields = new Set(["sideOneContent", "sideTwoContent", "leadersOne", "leadersTwo", "strengthOne", "strengthTwo", "lossesOne", "lossesTwo", "consequences"]);
-const state = { locale: "es", imageObjectUrl: "", customRows: [], nextRowId: 1, editedValues: Object.create(null), lastTextField: null };
+const state = { locale: "en", imageObjectUrl: "", customRows: [], nextRowId: 1, editedValues: Object.create(null), lastTextField: null };
 const form = document.querySelector("#mockup-form");
 const editorFields = document.querySelector("#editor-fields");
 const customRows = document.querySelector("#custom-rows");
