@@ -403,12 +403,12 @@ const fieldSections = {
   forces: ["strength", "strengthOne", "strengthTwo", "losses", "lossesOne", "lossesTwo"]
 };
 const textFields = new Set(["sideOneContent", "sideTwoContent", "leadersOne", "leadersTwo", "strengthOne", "strengthTwo", "lossesOne", "lossesTwo", "consequences"]);
-const state = { locale: "en", imageObjectUrl: "", customRows: [], nextRowId: 1, editedValues: Object.create(null), lastTextField: null };
+const languageSelect = document.querySelector("#language-select");
+const state = { locale: languageSelect.value, imageObjectUrl: "", customRows: [], nextRowId: 1, editedValues: Object.create(null), lastTextField: null };
 const form = document.querySelector("#mockup-form");
 const editorFields = document.querySelector("#editor-fields");
 const customRows = document.querySelector("#custom-rows");
 const preview = document.querySelector("#preview");
-const languageSelect = document.querySelector("#language-select");
 
 function currentText(id) {
   const element = form.elements.namedItem(id);

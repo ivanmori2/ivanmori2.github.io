@@ -43,7 +43,7 @@
         <span>WikiMockup</span>
       </a>
       <label class="language-picker">
-        <span id="language-label">Idioma</span>
+        <span id="language-label">Language</span>
         <select id="language-select" aria-labelledby="language-label">
           <option value="es">Español</option>
           <option value="en" selected>English</option>
@@ -59,33 +59,62 @@
     <main>
       <section class="intro">
         <p class="eyebrow">WIKIMOCKUP</p>
-        <h1 id="page-title">Un campo de batalla para tus historias</h1>
-        <p id="description"></p>
+        <h1 id="page-title">A battlefield for your stories</h1>
+        <p id="description">
+          WikiMockup was created to let alternate-history writers create
+          infoboxes for their alternate timelines.
+        </p>
       </section>
 
       <section class="instructions" aria-labelledby="instructions-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow" id="guide-eyebrow">GUÍA RÁPIDA</p>
-            <h2 id="instructions-title"></h2>
+            <p class="eyebrow" id="guide-eyebrow">QUICK GUIDE</p>
+            <h2 id="instructions-title">How to use the editor</h2>
           </div>
           <span class="guide-icon" aria-hidden="true">✦</span>
         </div>
-        <ol class="guide-list" id="guide-list"></ol>
+        <ol class="guide-list" id="guide-list">
+          <li>
+            Fill in the event details. Optional fields left blank will not
+            appear in the preview.
+          </li>
+          <li>
+            Choose an image from your device or paste a web address. Images are
+            scaled without cropping.
+          </li>
+          <li>
+            For the infobox image, try 220–300 px wide; preserve its aspect
+            ratio and avoid stretching it.
+          </li>
+          <li>
+            Add links with
+            <code>&lt;a href="https://…"&gt;text&lt;/a&gt;</code>, line breaks
+            with <code>&lt;br&gt;</code>, and flags with
+            <code>&lt;img src="…" width="15px"&gt;</code>. You can also select
+            text and highlight it blue.
+          </li>
+          <li>
+            Rename section headings and add custom rows. Apply changes, copy the
+            HTML, or download a high-resolution image.
+          </li>
+        </ol>
       </section>
 
       <div class="workspace">
         <section class="editor-panel" aria-labelledby="editor-title">
           <div class="panel-heading">
             <div>
-              <p class="eyebrow" id="editor-eyebrow">EDICIÓN</p>
-              <h2 id="editor-title"></h2>
+              <p class="eyebrow" id="editor-eyebrow">EDITOR</p>
+              <h2 id="editor-title">Mockup details</h2>
             </div>
             <button
               class="button button-subtle"
               id="reset-button"
               type="button"
-            ></button>
+            >
+              Reset example
+            </button>
           </div>
           <form id="mockup-form">
             <div id="editor-fields"></div>
@@ -95,14 +124,19 @@
             >
               <div class="custom-heading">
                 <div>
-                  <h3 id="custom-editor-title"></h3>
-                  <p id="custom-editor-help"></p>
+                  <h3 id="custom-editor-title">Additional sections</h3>
+                  <p id="custom-editor-help">
+                    Add a section and choose where it belongs; use the arrows to
+                    change its order.
+                  </p>
                 </div>
                 <button
                   class="button button-small"
                   id="add-row-button"
                   type="button"
-                ></button>
+                >
+                  + Add row
+                </button>
               </div>
               <div id="custom-rows"></div>
             </section>
@@ -111,24 +145,35 @@
                 class="button button-primary"
                 id="apply-button"
                 type="button"
-              ></button>
+              >
+                Apply changes
+              </button>
               <button
                 class="button button-secondary"
                 id="copy-button"
                 type="button"
-              ></button>
+              >
+                Copy HTML
+              </button>
               <button
                 class="button button-secondary"
                 id="download-button"
                 type="button"
-              ></button>
+              >
+                Download HD image
+              </button>
               <button
                 class="button button-secondary"
                 id="highlight-button"
                 type="button"
-              ></button>
+              >
+                Highlight selection in blue
+              </button>
             </div>
-            <p class="field-hint" id="highlight-help"></p>
+            <p class="field-hint" id="highlight-help">
+              Select text in any field and click this button to style it like a
+              blue link, without creating an actual link.
+            </p>
             <p
               class="copy-status"
               id="copy-status"
@@ -141,26 +186,28 @@
         <section class="preview-panel" aria-labelledby="preview-title">
           <div class="panel-heading preview-heading">
             <div>
-              <p class="eyebrow" id="preview-eyebrow">VISTA PREVIA</p>
-              <h2 id="preview-title"></h2>
+              <p class="eyebrow" id="preview-eyebrow">PREVIEW</p>
+              <h2 id="preview-title">Your infobox</h2>
             </div>
             <span class="live-badge"
-              ><span></span><span id="live-label"></span
-            ></span>
+              ><span></span><span id="live-label">Live preview</span></span
+            >
           </div>
           <div class="preview-stage">
             <div id="preview-output" class="preview-content">
               <div id="preview" class="wiki-box"></div>
             </div>
           </div>
-          <p class="preview-note" id="preview-note"></p>
+          <p class="preview-note" id="preview-note">
+            This is a visual mockup and is not affiliated with Wikipedia.
+          </p>
         </section>
       </div>
     </main>
 
     <footer>
-      <span id="footer-copy"></span>
-      <span id="footer-note"></span>
+      <span id="footer-copy">© Ivanmori. All rights reserved.</span>
+      <span id="footer-note">Non-profit project; no money is being made.</span>
     </footer>
   </body>
 </html>
